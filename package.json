@@ -1,0 +1,54 @@
+{
+  "name": "duplicate-beacon",
+  "version": "1.0.0",
+  "description": "Detect duplicate and near-duplicate content across your built static site: identical or near-identical titles, meta descriptions and page bodies (shingles + MinHash), site-name-only title differences and boilerplate-heavy pages. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "duplicate-beacon": "bin/duplicate-beacon.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "duplicate-content",
+    "near-duplicate",
+    "duplicate-titles",
+    "meta-description",
+    "minhash",
+    "content-audit",
+    "seo",
+    "static-site",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/duplicate-beacon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/duplicate-beacon/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/duplicate-beacon#readme"
+}
