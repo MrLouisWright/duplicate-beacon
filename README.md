@@ -1,5 +1,7 @@
 # duplicate-beacon
 
+[![npm version](https://img.shields.io/npm/v/duplicate-beacon.svg)](https://www.npmjs.com/package/duplicate-beacon) [![CI](https://github.com/MrLouisWright/duplicate-beacon/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/duplicate-beacon/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/duplicate-beacon.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Detect duplicate and near-duplicate titles, meta descriptions and page bodies across your built static site.
 
 Duplicate content splits ranking signals and makes search engines pick a URL for you. It usually comes from templates: every product page titled "Widgets | Acme", one meta description pasted into twenty pages, a print or AMP copy of every article, tag pages that are 95% the same. `duplicate-beacon` compares every built page with every other one, skipping pages that are `noindex` or already canonicalised elsewhere, and reports each group with the files, severity and a **concrete fix**.
