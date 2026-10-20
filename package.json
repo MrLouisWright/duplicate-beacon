@@ -1,6 +1,6 @@
 {
   "name": "duplicate-beacon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect duplicate and near-duplicate content across your built static site: identical or near-identical titles, meta descriptions and page bodies (shingles + MinHash), site-name-only title differences and boilerplate-heavy pages. Text/JSON/SARIF/Markdown, allowlist with expiry, GitHub Action. Zero deps.",
   "type": "module",
   "main": "./src/index.js",
