@@ -65,7 +65,7 @@ MEDIUM   c.html /a.html and /c.html are 94% similar [near-duplicate-body]
 ## Options
 
 ```text
-duplicate-beacon 1.0.0 — detect duplicate and near-duplicate titles, descriptions and page bodies
+duplicate-beacon 1.0.1 — detect duplicate and near-duplicate titles, descriptions and page bodies
 
 Usage: duplicate-beacon [site-dir] [options]
 
@@ -169,11 +169,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev duplicate-beacon
+```
+
 ```js
 import { check, shingles, jaccard } from "duplicate-beacon";
 const report = check("dist", { threshold: 0.85 });
 jaccard(shingles(a), shingles(b)); // 0..1
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("duplicate-beacon")` from CommonJS.
 
 Types are included.
 
